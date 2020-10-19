@@ -26,7 +26,7 @@ def get_splits(splits, player):
 
 # Write the data to an excel file using pandas dataframe's 
 def write_splits_to_excel(bref_id, player, mlbam):
-    with pd.ExcelWriter(f'{player}.xlsx') as writer:
+    with pd.ExcelWriter(f'{player}.xlsx') as writer: # pylint: disable=abstract-class-instantiated
         for year in [2020, 2019, 2018, 2017]:
             try:
                 lookup = pybaseball.get_splits(str(bref_id), year=year, pitching_splits=True)
@@ -120,6 +120,3 @@ txt_box.pack(expand=1, fill='both')
 my_scrollbar.config(command=txt_box.yview)
 txt_box.config(state='disabled')
 root.mainloop()
-
-
-
