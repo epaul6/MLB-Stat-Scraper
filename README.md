@@ -8,10 +8,12 @@ The file will be named with whatever player you chose to scrape. Also, it will w
 ### Installation
 
 ```install
-$ git clone https://github.com/epthewizard/MAC-Scanner.git
-$ cd MAC-Scanner
+$ https://github.com/epthewizard/MLB-Stat-Scraper.git
+$ cd MLB-Stat-Scraper
 $ python3 -m venv venv
 $ source venv/bin/activate
 $ pip3 install -r requirements.txt
 ```
- 
+### Running the Program 
+
+`python3 baseball_app.py`
